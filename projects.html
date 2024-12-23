@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Page</title>
+    <style>
+      /* General Body Styles */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f4f4f4, #eaeaea);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      /* Container Styles */
+      .container {
+        text-align: center;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      /* Header Styles */
+      h1 {
+        margin-bottom: 20px;
+        color: #333;
+        font-size: 2.5em;
+        text-transform: uppercase;
+      }
+
+      /* Image Row Styles */
+      .image-row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      /* Image Card Styles */
+      .image-card {
+        margin: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      /* Image Styles */
+      .image-card img {
+        width: 120px; /* Adjust size as needed */
+        height: 120px; /* Adjust size as needed */
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+
+      /* Hover Effects */
+      .image-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .image-card img:hover {
+        transform: scale(1.1);
+      }
+
+      /* Container Hover Effect */
+      .container:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Choose an Option</h1>
+      <div class="image-row">
+        <a href="bmi-calculator-javascript/index.html" class="image-card">
+          <img src="Screenshot 2024-12-22 at 7.56.37 PM.png" alt="Option 1" />
+        </a>
+        <a href="CALCULATOR/calculator.html" class="image-card">
+          <img src="Screenshot 2024-12-22 at 7.59.57 PM.png" alt="Option 2" />
+        </a>
+        <a href="DigitalClock/clock.html" class="image-card">
+          <img src="Screenshot 2024-12-22 at 8.02.24 PM.png" alt="Option 3" />
+        </a>
+        <a href="RockPaperScissor/index.html" class="image-card">
+          <img src="Screenshot 2024-12-22 at 8.06.15 PM.png" alt="Option 4" />
+        </a>
+        <a href="TIC TAC TOE/index.html" class="image-card">
+          <img src="Screenshot 2024-12-22 at 8.07.59 PM.png" alt="Option 5" />
+        </a>
+        <a href="TodoListApp/index.html" class="image-card">
+          <img src="Screenshot 2024-12-22 at 8.09.57 PM.png" alt="Option 6" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
