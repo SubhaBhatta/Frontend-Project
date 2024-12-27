@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to CSS -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dynamic To-Do List</h1>
+
+      <!-- Task Form -->
+      <form id="task-form">
+        <input type="text" id="task-title" placeholder="Task Title" required />
+        <textarea
+          id="task-description"
+          placeholder="Task Description"
+        ></textarea>
+        <select id="task-priority">
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+        <input type="date" id="task-due-date" />
+        <button type="submit">Add Task</button>
+      </form>
+
+      <!-- Task Filters -->
+      <div class="filters">
+        <button onclick="filterTasks('All')">All</button>
+        <button onclick="filterTasks('High')">High Priority</button>
+        <button onclick="filterTasks('Medium')">Medium Priority</button>
+        <button onclick="filterTasks('Low')">Low Priority</button>
+      </div>
+
+      <!-- Task Lists -->
+      <h2>Pending Tasks</h2>
+      <ul id="task-list"></ul>
+      <h2>Completed Tasks</h2>
+      <ul id="completed-tasks"></ul>
+    </div>
+    <script src="script.js"></script>
+    <!-- Link to JS -->
+  </body>
+</html>
